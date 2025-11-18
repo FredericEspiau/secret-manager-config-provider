@@ -2,7 +2,7 @@ import * as it from "@effect/vitest"
 import { SecretManagerServiceClient } from "@google-cloud/secret-manager"
 import { Array, Config, Effect, pipe, Record } from "effect"
 import { beforeEach, describe, expect, vi } from "vitest"
-import { layerGcpWithEnvFallback } from "../src/GcpSecretManagerConfigProvider.js"
+import { layerGcpWithEnvFallback } from "../src/gcp-secret-manager/index.js"
 
 vi.mock("@google-cloud/secret-manager", () => ({
   SecretManagerServiceClient: vi.fn()
