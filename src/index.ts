@@ -1,1 +1,2 @@
-export * as GcpSecretManagerConfigProvider from "./gcp-secret-manager/index.js"
+export * from "./GcpProvider/index.js"
+export * as SecretManagerConfigProvider from "./layers.js"
