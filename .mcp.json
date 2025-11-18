@@ -1,0 +1,66 @@
+{
+  "mcpServers": {
+    "Browser": {
+      "args": [
+        "@browsermcp/mcp@latest"
+      ],
+      "command": "npx",
+      "env": {},
+      "type": "stdio"
+    },
+    "Context7": {
+      "type": "http",
+      "url": "https://mcp.context7.com/mcp"
+    },
+    "Effect-Docs": {
+      "args": [
+        "-y",
+        "effect-mcp@latest"
+      ],
+      "command": "npx",
+      "env": {}
+    },
+    "ESLint": {
+      "args": [
+        "-y",
+        "@eslint/mcp@latest"
+      ],
+      "command": "npx",
+      "env": {}
+    },
+    "Filesystem": {
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "."
+      ],
+      "command": "npx"
+    },
+    "Memory": {
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
+      "command": "npx"
+    },
+    "Sentry": {
+      "type": "http",
+      "url": "https://mcp.sentry.dev/mcp"
+    },
+    "Serena": {
+      "args": [
+        "--from",
+        "git+https://github.com/oraios/serena",
+        "serena",
+        "start-mcp-server",
+        "--context",
+        "ide-assistant",
+        "--project",
+        "."
+      ],
+      "command": "uvx",
+      "env": {},
+      "type": "stdio"
+    }
+  }
+}

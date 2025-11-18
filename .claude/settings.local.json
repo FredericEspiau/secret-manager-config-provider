@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(superpowers:brainstorming)",
+      "Bash(pnpm run typecheck:*)",
+      "Bash(pnpm run:*)",
+      "Bash(pnpm check:*)",
+      "Bash(pnpm test:*)",
+      "Bash(cat:*)",
+      "Bash(pnpm build-esm:*)",
+      "Bash(pnpm tsc:*)",
+      "Bash(pnpm eslint:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
